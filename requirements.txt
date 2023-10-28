@@ -1,0 +1,11 @@
+torch
+langchain
+chainlit
+chromadb
+python-dotenv
+transformers
+sentence_transformers
+unstructured
+ctransformers
+Markdown
+pypdf
