@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+from pandasai import SmartDataframe
 
 # Create a Streamlit app with a file uploader and a text input box for user queries.
 def main():
@@ -8,6 +9,7 @@ def main():
     uploaded_file = st.file_uploader("Choose a CSV file")
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
+        df = SmartDataframe(df)
 
         # Define a function to process user queries and return the appropriate response.
         def process_query(query):
@@ -28,13 +30,7 @@ def main():
 
         # Add the necessary Streamlit components to display the response and the plot.
         query = st.text_input("Ask a question about the data")
-        if query:
-            response = process_query(query)
-            st.write(response)
-
-            if "plot" in query.lower():
-                cols = st.text_input("Enter column names").split(",")
-                plot_data(cols)
+        df.chat('Which are the countries with GDP greater than 3000000000000?')
 
 if __name__ == "__main__":
     main()
