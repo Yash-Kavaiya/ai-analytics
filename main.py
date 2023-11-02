@@ -32,12 +32,12 @@ header = st.container()
 with header:
     st.title("PandasAI Analysis App")
     st.markdown("Use this Streamlit app to analyze your data in one shot. You can upload your data and ask questions about it. The app will answer your questions and provide you with insights about your data.")
-    st.write("")
+    
 # Define main content
 content = st.container()
 with content:
     # Load sales dataset
-    sale_file = st.file_uploader('Select Your Local Sales CSV (default provided)')
+    sale_file = st.file_uploader('Upload a CSV file', type=['csv'])
     if sale_file is not None:
         df = pd.read_csv(sale_file, encoding='latin-1')
         sdf = SmartDataframe(df, config={"llm": llm})
