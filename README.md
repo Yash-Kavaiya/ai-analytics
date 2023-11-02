@@ -2,6 +2,8 @@
 
 Youtube Video :- https://youtube.com/live/dtB78cuY08U
 
+Streamlit  website :- https://pandas-ai-website.streamlit.app/
+
 This is a Streamlit app that uses Pandas and AI to perform data analytics on uploaded CSV files.
 
 ## Features
