@@ -1,2 +1,4 @@
 pandasai
 streamlit
+pandasai
+google.generativeai
