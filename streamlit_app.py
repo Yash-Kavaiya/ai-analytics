@@ -6,8 +6,6 @@ from pandasai.llm import GooglePalm
 
 llm = GooglePalm(api_key="AIzaSyAnw_3MPaMeoR6zK3Om9ObtaTXLTfuZ86k")
 import matplotlib.pyplot as plt
-
-import seaborn as sns
 from PIL import Image
 st.set_page_config(
     page_title="PandasAI Insight App",
