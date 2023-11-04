@@ -1,4 +1,4 @@
-# **AI Analytics App with Streamlit and Pandas**
+# **AI Analytics App with Streamlit and PandasAI**
 
 Youtube Video :- https://youtube.com/live/dtB78cuY08U
 
