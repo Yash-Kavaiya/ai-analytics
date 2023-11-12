@@ -4,3 +4,4 @@ pandasai
 google.generativeai
 seaborn
 grpcio==1.59.2
+urllib3==1.26.7
