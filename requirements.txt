@@ -3,3 +3,4 @@ streamlit
 pandasai
 google.generativeai
 seaborn
+grpcio==1.59.2
